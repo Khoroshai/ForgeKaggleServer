@@ -1,6 +1,6 @@
 # Forge Minecraft Server
-This method is inspired from MineColab (https://github.com/thecoder-001/MineColab)
-and derived from my Colab version (https://github.com/Khoroshai/ForgeColabServer)
+This method is inspired from [MineColab](https://github.com/thecoder-001/MineColab)
+and derived from my [Colab version.](https://github.com/Khoroshai/ForgeColabServer)
 
 *It uses free ressources thanks to Kaggle, do not abuse of it.*
 
@@ -17,7 +17,7 @@ The world files and logs are saved to gdrive every 5 minutes.
 - Mods
 - A Playit.gg account (free)
 - RCon enabled in *server.properties*.
-- Set up pydrive (Nice tutorial here : https://medium.com/analytics-vidhya/how-to-connect-google-drive-to-python-using-pydrive-9681b2a14f20) Once you have your credentials file for Kaggle, you could put it in a private dataset so the notebook can easily access it.
+- Set up [pydrive](https://medium.com/analytics-vidhya/how-to-connect-google-drive-to-python-using-pydrive-9681b2a14f20). (Once you have your credentials file for Kaggle, you could put it in a private dataset so the notebook can easily access it)
 
 # How to use
 1) Prepare everything on your gdrive (zipped server with mods).
@@ -34,3 +34,7 @@ The logs are visible in the Console or through a cell. This cell runs continuous
 **Any error or manually stopping a cell will also hard stop the server**.
 
 To stop the server the good way, write "stop" in **Send Commands**.
+
+To update/refresh your credentials (because they will expire at some point after a few days or weeks and it could be while the server is up) use either the Python version or the Batch version of *UpdateCredentials*. 
+Edit them before usage to configure Python path and namings. 
+The script will open your browser to make a new gdrive.txt, then it gets the metadata of your dataset and uploads everything into a new version.
