@@ -37,4 +37,5 @@ To stop the server the good way, write "stop" in **Send Commands**.
 
 To update/refresh your credentials (because they will expire at some point after a few days or weeks and it could be while the server is up) use either the Python version or the Batch version of *UpdateCredentials*. 
 Edit them before usage to configure Python path and namings. 
+Requires Kaggle lib (`pip install kaggle`) and Kaggle API (Profile -> Account -> Create New Token). Put the file to *C:\Users\YourName\\.kaggle\kaggle.json*.  
 The script will open your browser to make a new gdrive.txt, then it gets the metadata of your dataset and uploads everything into a new version.
